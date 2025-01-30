@@ -21,14 +21,14 @@ public class ModBlocks
 
     public static final DeferredBlock<Block> BISMUTH_BLOCK = registerBlock("bismuth_block",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .setId(TutorialMod.getBlockResourceKey("tutorialmod:bismuth_block"))
+                    .setId(TutorialMod.getBlockResourceKey("bismuth_block"))
                     .strength(4f)
                     .requiresCorrectToolForDrops()
                     .sound(SoundType.AMETHYST)));
     public static final DeferredBlock<Block> BISMUTH_ORE = registerBlock("bismuth_ore",
             () -> new DropExperienceBlock(UniformInt.of(2, 4),
                 BlockBehaviour.Properties.of()
-                        .setId(TutorialMod.getBlockResourceKey("tutorialmod:bismuth_ore"))
+                        .setId(TutorialMod.getBlockResourceKey("bismuth_ore"))
                         .strength(3f)
                         .requiresCorrectToolForDrops()
                         .sound(SoundType.STONE)));
