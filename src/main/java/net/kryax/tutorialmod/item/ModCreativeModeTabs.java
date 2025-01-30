@@ -4,7 +4,6 @@ import net.kryax.tutorialmod.TutorialMod;
 import net.kryax.tutorialmod.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 import net.neoforged.bus.api.IEventBus;
@@ -25,7 +24,7 @@ public class ModCreativeModeTabs
                         output.accept(ModItems.RAW_BISMUTH);
                         output.accept(ModBlocks.BISMUTH_BLOCK);
                         output.accept(ModBlocks.BISMUTH_ORE);
-                        //output.accept(ModBlocks.BISMUTH_DEEPSLATE_ORE);
+                        output.accept(ModBlocks.BISMUTH_DEEPSLATE_ORE);
                     }).build());
 
     public static void register(IEventBus eventBus)

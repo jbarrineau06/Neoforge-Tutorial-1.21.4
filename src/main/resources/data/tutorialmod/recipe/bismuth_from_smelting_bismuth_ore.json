@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "group": "bismuth",
+  "experience": 0.25,
+  "cookingtime": 200,
+  "ingredient": "tutorialmod:bismuth_ore",
+  "result": {
+    "id": "tutorialmod:bismuth"
+  }
+}
