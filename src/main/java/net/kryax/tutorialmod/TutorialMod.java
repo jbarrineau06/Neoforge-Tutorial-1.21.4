@@ -1,6 +1,9 @@
 package net.kryax.tutorialmod;
 
+import net.kryax.tutorialmod.block.ModBlocks;
 import net.kryax.tutorialmod.item.ModItems;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.resources.ResourceLocation;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -57,6 +60,7 @@ public class TutorialMod
         NeoForge.EVENT_BUS.register(this);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -77,6 +81,12 @@ public class TutorialMod
             event.accept(ModItems.BISMUTH);
             event.accept(ModItems.RAW_BISMUTH);
         }
+
+        if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS)
+        {
+            event.accept(ModBlocks.BISMUTH_BLOCK);
+            event.accept(ModBlocks.BISMUTH_ORE);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
@@ -93,5 +103,15 @@ public class TutorialMod
         public static void onClientSetup(FMLClientSetupEvent event)
         {
         }
+    }
+
+    public static ResourceKey<Block> getBlockResourceKey(String name)
+    {
+        return ResourceKey.create(Registries.BLOCK, ResourceLocation.parse(name));
+    }
+
+    public static ResourceKey<Item> getItemResourceKey(String name)
+    {
+        return ResourceKey.create(Registries.ITEM, ResourceLocation.parse(name));
     }
 }

@@ -2,5 +2,7 @@
   "itemGroup.tutorialmod": "Example Mod Tab",
   "block.tutorialmod.example_block": "Example Block",
   "item.tutorialmod.bismuth": "Bismuth",
-  "item.tutorialmod.raw_bismuth": "Raw Bismuth"
+  "item.tutorialmod.raw_bismuth": "Raw Bismuth",
+  "item.tutorialmod.bismuth_block": "Block of Bismuth",
+  "item.tutorialmod.bismuth_ore": "Bismuth Ore"
 }
