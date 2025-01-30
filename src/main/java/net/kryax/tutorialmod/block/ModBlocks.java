@@ -42,7 +42,7 @@ public class ModBlocks
 
     private static <T extends Block> void registerBlockItem(String name, DeferredBlock<T> block)
     {
-        ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties().setId(TutorialMod.getItemResourceKey("tutorialmod:" + name))));
+        ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties().setId(TutorialMod.getItemResourceKey(name))));
     }
 
     public static void register(IEventBus eventBus)

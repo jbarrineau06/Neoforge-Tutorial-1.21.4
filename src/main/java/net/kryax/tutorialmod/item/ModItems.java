@@ -15,9 +15,9 @@ public class ModItems
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(TutorialMod.MOD_ID);
 
     public static final DeferredItem<Item> BISMUTH = ITEMS.register("bismuth",
-            () -> new Item(new Item.Properties().setId(TutorialMod.getItemResourceKey("tutorialmod:bismuth"))));
+            () -> new Item(new Item.Properties().setId(TutorialMod.getItemResourceKey("bismuth"))));
     public static final DeferredItem<Item> RAW_BISMUTH = ITEMS.register("raw_bismuth",
-            () -> new Item(new Item.Properties().setId(TutorialMod.getItemResourceKey("tutorialmod:raw_bismuth"))));
+            () -> new Item(new Item.Properties().setId(TutorialMod.getItemResourceKey("raw_bismuth"))));
 
     public static void register(IEventBus eventBus)
     {
